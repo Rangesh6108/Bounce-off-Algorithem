@@ -37,7 +37,7 @@ function draw() {
     music.play();
 
     //create edgeSprite
-    edges=createEdgeSprites();
+    edges=createEdgeSprites();  
 
     // Make box to bounceoff edges
     box.bounceOff(edges);
@@ -49,6 +49,7 @@ function draw() {
         box.bounceOff(surface1);
         box.velocityX=0;
         box.velocityY=0;
+        music.stop();
     }
 
     if(box.isTouching(surface2)){
